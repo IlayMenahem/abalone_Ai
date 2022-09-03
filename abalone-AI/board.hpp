@@ -3,7 +3,8 @@
 #include <cassert>
 //add struct (called tuple) of n integers (like a tuple).
 //add struct of n tuples (like a tuple).
-//ilay3 ata poh?
+//good tutorial ive found on this topic - https://www.youtube.com/watch?v=dQw4w9WgXcQ
+//goodb
 
 class board{
     private:
