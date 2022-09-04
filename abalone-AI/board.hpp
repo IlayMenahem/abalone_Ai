@@ -1,19 +1,32 @@
 #include <map>
 #include <iostream>
 #include <cassert>
+#include <string>
+
+#ifndef NUM_OF_SPACES
+#define NUM_OF_SPACES = 61
 //add struct (called tuple) of n integers (like a tuple).
 //add struct of n tuples (like a tuple).
-//good tutorial ive found on this topic - https://www.youtube.com/watch?v=dQw4w9WgXcQ
-//goodb
+
+struct staticArray{
+    int arr[];
+};
+
+struct static2DArray{
+    int arr[][];
+};
 
 class board{
     private:
-        char spaces [61];
-        std::map<int[3], int[6][3]> possibleMoves3;
-        std::map<int[2], int[6][2]> possibleMoves2;
-        std::map<int[1], int[6][1]> possibleMoves1;
-
+        char spaces [NUM_OF_SPACES];
+        std::map<staticArray, static2DArray> possibleMoves3;
+        std::map<staticArray, static2DArray> possibleMoves2;
+        std::map<staticArray, static2DArray> possibleMoves1;
+        
     public:
+        /**
+         * @brief Construct a new board object
+         */
         board(){
             possibleMoves3[{1,2,3}] = {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
         }
