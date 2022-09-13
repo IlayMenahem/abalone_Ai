@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "map": "cpp"
+        "map": "cpp",
+        "iostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
