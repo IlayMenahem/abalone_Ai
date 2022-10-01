@@ -2,9 +2,11 @@
 #include <iostream>
 #include <cassert>
 #include <string>
+#include <stdlib.h>
 
 #ifndef NUM_OF_SPACES
 #define NUM_OF_SPACES = 61
+#endif
 //add struct (called tuple) of n integers (like a tuple).
 //add struct of n tuples (like a tuple).
 
@@ -18,7 +20,7 @@ struct static2DArray{
 
 class board{
     private:
-        char spaces [NUM_OF_SPACES];
+        char spaces[NUM_OF_SPACES];
         std::map<staticArray, static2DArray> possibleMoves3;
         std::map<staticArray, static2DArray> possibleMoves2;
         std::map<staticArray, static2DArray> possibleMoves1;
