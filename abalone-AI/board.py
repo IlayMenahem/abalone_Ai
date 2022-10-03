@@ -9,14 +9,19 @@ import constants as const
 import entry
 
 class board:
-    #to finish
     def __init__(self):
         # none = 0 empty = 1, white = 2, black = 3
-        entries = np.full(-1,shape=(9,9), dtype='i4')
-        for x in range(9):
-            for y in range(9):
-                if x < 
-        entries = [entry(1)]*11+[entry(0)]*2+[entry(1)]*3+[entry(0)]*29+[entry(1)]*3+[entry(0)]*2+[entry(1)]*11
+        entries = [2]*5+[0]*4
+        +[2]*6+[0]*3
+        +[1]*2+[2]*3+[1]*2+[0]*2
+        +[1]*8+[0]
+        +[1]*9
+        +[1]*8+[0]
+        +[1]*2+[3]*3+[1]*2+[0]*2
+        +[3]*6+[0]*3
+        +[3]*5+[0]*4
+        entries = np.array(entries, dtype='i4')
+        np.reshape(entries,(9,9))
 
     def row_length(self, row):
         if(row<5):
