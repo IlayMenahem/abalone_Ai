@@ -6,7 +6,6 @@ from multiprocessing.sharedctypes import Value
 
 import numpy as np
 import constants as const
-import entry
 
 class board:
     '''
