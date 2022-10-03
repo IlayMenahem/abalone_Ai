@@ -1,6 +1,6 @@
 #TODO:
 #make a game with gui
-
+#enable game actions 
 
 from multiprocessing.sharedctypes import Value
 
@@ -9,6 +9,9 @@ import constants as const
 import entry
 
 class board:
+    '''
+    counstracts a new board
+    '''
     def __init__(self):
         # none = 0 empty = 1, white = 2, black = 3
         entries = [2]*5+[0]*4
@@ -23,12 +26,22 @@ class board:
         entries = np.array(entries, dtype='i4')
         np.reshape(entries,(9,9))
 
-    def row_length(self, row):
+    '''
+    @param the row
+    @returns the length of the row
+    '''
+    def row_length(row):
         if(row<5):
             return row+5
         else:
             return 13-row
-        
+    
+    '''
+    @param potential move
+    @return if that move is legal
+    '''
+    def legal_moves(self,move):
+        pass
     def gen_neighbors(self, row, index):
         res = []
         if(row==0):
